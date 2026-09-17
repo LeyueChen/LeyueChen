@@ -60,3 +60,48 @@ I enjoy working close to the hardware — from MCU drivers and real-time systems
   <img src="https://img.shields.io/badge/LVGL-2A91CB?style=for-the-badge&logo=lvgl&logoColor=white" />
   <img src="https://img.shields.io/badge/TinyML-Edge_AI-blue?style=for-the-badge" />
 </p>
+
+---
+
+## 🚀 Featured Projects
+
+### 🤖 Distributed TinyML Robot System
+
+**TinyML · ESP32-S3 · STM32F407 · FreeRTOS · Embedded Linux**
+
+A distributed multi-robot system exploring heterogeneous MCU collaboration, edge intelligence, and TinyML-based task allocation.
+
+[→ PPAB Training & Experimental Data](https://github.com/LeyueChen/PPAB_Training_Data)
+
+---
+
+### 🎧 CJC6811A USB Audio Codec
+
+**Hardware Design · USB Audio · PCB · Audio Electronics**
+
+A portable USB audio codec designed around the CJC6811A, featuring high-resolution audio output, a four-layer PCB, signal-integrity considerations, and mixed-signal circuit design.
+
+[→ View Project](https://github.com/LeyueChen/CJC6811A_Integrated_USB_Audio_Codec)
+
+---
+
+### 🔧 STM32F407 Project Template
+
+**STM32F407 · Embedded C · FreeRTOS · MCU Development**
+
+A reusable STM32F407 project foundation for embedded development and rapid firmware prototyping.
+
+[→ View Project](https://github.com/LeyueChen/STM32F407_ProjectTemplate)
+
+
+
+
+
+
+
+
+
+
+
+
+
