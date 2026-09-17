@@ -2,14 +2,14 @@
 
 # Hi, I'm Leyue 👋
 
-~~~text
+```text
 __
      / /   ___   __  __  __  __   ___
-    / /   / _ \ / / / / / / / /  / _ \
+    / /   / _ \\ / / / / / / / /  / _ \\
    / /__ /  __// /_/ / / /_/ /  /  __/
-  /_____/\___/ \__  /  \__ _/   \___/
+  /_____/\\___/ \\__  /  \\__ _/   \\___/
   /___/
-~~~
+```
 
 ### Embedded Systems · TinyML · Robotics · Audio DSP
 
@@ -25,32 +25,59 @@ I'm an embedded systems developer interested in building intelligent systems tha
 
 Currently focusing on:
 
-* 🔧 Embedded Systems & RTOS
-* 🤖 TinyML & Edge AI
-* 🦾 Robotics & Distributed Systems
-* 🎸 Real-time Audio DSP
-* 🖥️ Embedded GUI & LVGL
-* 🐧 Embedded Linux
+- 🔧 Embedded Systems & RTOS
+- 🤖 TinyML & Edge AI
+- 🦾 Robotics & Distributed Systems
+- 🎸 Real-time Audio DSP
+- 🖥️ Embedded GUI & LVGL
+- 🐧 Embedded Linux
 
 I enjoy working close to the hardware — from MCU drivers and real-time systems to TinyML inference and distributed intelligent devices.
 
-
 ---
 
-## 📊 GitHub Overview
+## 📈 Development Activity
 
 <div align="center">
 
-<img height="165" src="https://github-stats-extended.vercel.app/api?username=LeyueChen&show_icons=true&hide_border=true&theme=github_dark&include_all_commits=true" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=LeyueChen&theme=github-compact&hide_border=true&area=true&custom_title=Contribution%20Activity&days=40" width="100%" />
 
+<br/>
+
+<img height="165" src="https://github-stats-extended.vercel.app/api?username=LeyueChen&show_icons=true&hide_border=true&theme=github_dark&include_all_commits=true" />
 <img height="165" src="https://github-stats-extended.vercel.app/api/top-langs/?username=LeyueChen&layout=compact&hide_border=true&theme=github_dark&langs_count=8" />
 
 </div>
 
+> The language card reflects the composition of public repositories, not programming-language proficiency.
 
+---
 
+## 🚀 Featured Projects
 
+### 🤖 Distributed TinyML Robot System
 
+**TinyML · ESP32-S3 · STM32F407 · FreeRTOS · Embedded Linux**
+
+A distributed multi-robot system exploring heterogeneous MCU collaboration, edge intelligence, and TinyML-based task allocation.
+
+[→ PPAB Training & Experimental Data](https://github.com/LeyueChen/PPAB_Training_Data)
+
+### 🎧 CJC6811A USB Audio Codec
+
+**Hardware Design · USB Audio · PCB · Audio Electronics**
+
+A portable USB audio codec designed around the CJC6811A, featuring high-resolution audio output, a four-layer PCB, signal-integrity considerations, and mixed-signal circuit design.
+
+[→ View Project](https://github.com/LeyueChen/CJC6811A_Integrated_USB_Audio_Codec)
+
+### 🔧 STM32F407 Project Template
+
+**STM32F407 · Embedded C · FreeRTOS · MCU Development**
+
+A reusable STM32F407 project foundation for embedded development and rapid firmware prototyping.
+
+[→ View Project](https://github.com/LeyueChen/STM32F407_ProjectTemplate)
 
 ---
 
@@ -80,37 +107,12 @@ I enjoy working close to the hardware — from MCU drivers and real-time systems
 
 ---
 
-## 🚀 Featured Projects
+## 🌱 Current Focus
 
-### 🤖 Distributed TinyML Robot System
-
-**TinyML · ESP32-S3 · STM32F407 · FreeRTOS · Embedded Linux**
-
-A distributed multi-robot system exploring heterogeneous MCU collaboration, edge intelligence, and TinyML-based task allocation.
-
-[→ PPAB Training & Experimental Data](https://github.com/LeyueChen/PPAB_Training_Data)
-
----
-
-### 🎧 CJC6811A USB Audio Codec
-
-**Hardware Design · USB Audio · PCB · Audio Electronics**
-
-A portable USB audio codec designed around the CJC6811A, featuring high-resolution audio output, a four-layer PCB, signal-integrity considerations, and mixed-signal circuit design.
-
-[→ View Project](https://github.com/LeyueChen/CJC6811A_Integrated_USB_Audio_Codec)
-
----
-
-### 🔧 STM32F407 Project Template
-
-**STM32F407 · Embedded C · FreeRTOS · MCU Development**
-
-A reusable STM32F407 project foundation for embedded development and rapid firmware prototyping.
-
-[→ View Project](https://github.com/LeyueChen/STM32F407_ProjectTemplate)
-
-
+- Building reusable embedded-system infrastructure and tooling
+- Exploring distributed TinyML and edge-intelligence architectures
+- Improving real-time audio DSP and embedded GUI workflows
+- Developing open-source projects with stronger documentation and reproducibility
 
 ---
 
@@ -133,11 +135,3 @@ If you're working on something interesting in these areas, feel free to reach ou
 **Build close to the hardware. Think beyond the hardware.**
 
 </div>
-
-
-
-
-
-
-
-
