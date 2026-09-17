@@ -17,13 +17,9 @@ Embedded systems developer working across MCU firmware, RTOS, edge AI, robotics,
 Currently exploring distributed TinyML systems, reusable embedded tooling, and low-level software/hardware co-design.
 
 ---
-
-## Contributions
-
 <div align="center">
   <img src="./assets/contribution-calendar.svg" width="100%" alt="GitHub contribution calendar" />
 </div>
-
 ---
 
 <div align="center">
