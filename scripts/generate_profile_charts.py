@@ -97,7 +97,6 @@ def svg_header(width, height, title):
   .line {{ fill:none; stroke:#58a6ff; stroke-width:3; stroke-linejoin:round; stroke-linecap:round; }}
   .area {{ fill:#58a6ff; opacity:.12; }}
   .dot {{ fill:#79c0ff; }}
-  .bar {{ fill:#238636; }}
 </style>
 <rect class="bg" x="0" y="0" width="{width}" height="{height}" rx="10"/>
 <text class="title" x="24" y="32">{safe}</text>'''
@@ -146,6 +145,96 @@ def render_activity(values, path):
     path.write_text("\n".join(out), encoding="utf-8")
 
 
+def render_contribution_calendar(values, path):
+    data = {d: v for d, v in values}
+    today = dt.date.today()
+    start = today - dt.timedelta(days=364)
+    # Align the first column to Sunday, like GitHub's contribution graph.
+    sunday_offset = (start.weekday() + 1) % 7
+    grid_start = start - dt.timedelta(days=sunday_offset)
+    grid_end = today + dt.timedelta(days=(5 - today.weekday()) % 7)
+    total_days = (grid_end - grid_start).days + 1
+    weeks = math.ceil(total_days / 7)
+
+    cell = 12
+    gap = 3
+    step = cell + gap
+    left = 52
+    top = 62
+    right = 24
+    bottom = 50
+    width = left + weeks * step + right
+    height = top + 7 * step + bottom
+
+    vals = [v for d, v in values if d >= start]
+    total = sum(vals)
+    nonzero = sorted(v for v in vals if v > 0)
+    if nonzero:
+        q1 = nonzero[max(0, int(len(nonzero) * 0.25) - 1)]
+        q2 = nonzero[max(0, int(len(nonzero) * 0.50) - 1)]
+        q3 = nonzero[max(0, int(len(nonzero) * 0.75) - 1)]
+    else:
+        q1 = q2 = q3 = 1
+
+    def level(v):
+        if v <= 0:
+            return 0
+        if v <= q1:
+            return 1
+        if v <= q2:
+            return 2
+        if v <= q3:
+            return 3
+        return 4
+
+    colors = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
+    out = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{total} contributions in the last year">
+<style>
+  .bg {{ fill:#0d1117; }}
+  .title {{ fill:#f0f6fc; font:600 18px -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; }}
+  .label {{ fill:#8b949e; font:12px -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; }}
+  .month {{ fill:#c9d1d9; font:12px -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; }}
+  .cell {{ stroke:#0d1117; stroke-width:1; }}
+</style>
+<rect class="bg" x="0" y="0" width="{width}" height="{height}" rx="10"/>
+<text class="title" x="18" y="30">{total} contributions in the last year</text>''']
+
+    for row, label in [(1, "Mon"), (3, "Wed"), (5, "Fri")]:
+        y = top + row * step + cell - 1
+        out.append(f'<text class="label" x="12" y="{y}">{label}</text>')
+
+    last_month = None
+    for week in range(weeks):
+        week_date = grid_start + dt.timedelta(days=week * 7)
+        month = week_date.strftime("%b")
+        if month != last_month and week_date.day <= 7:
+            x = left + week * step
+            out.append(f'<text class="month" x="{x}" y="{top-14}">{month}</text>')
+            last_month = month
+
+        for row in range(7):
+            date = grid_start + dt.timedelta(days=week * 7 + row)
+            if date < start or date > today:
+                continue
+            v = data.get(date, 0)
+            x = left + week * step
+            y = top + row * step
+            color = colors[level(v)]
+            out.append(
+                f'<rect class="cell" x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2" fill="{color}">'
+                f'<title>{date.isoformat()}: {v} contributions</title></rect>'
+            )
+
+    legend_y = height - 20
+    legend_x = width - 154
+    out.append(f'<text class="label" x="{legend_x-34}" y="{legend_y+10}">Less</text>')
+    for i, color in enumerate(colors):
+        out.append(f'<rect x="{legend_x+i*step}" y="{legend_y}" width="{cell}" height="{cell}" rx="2" fill="{color}"/>')
+    out.append(f'<text class="label" x="{legend_x+5*step+4}" y="{legend_y+10}">More</text>')
+    out.append('</svg>')
+    path.write_text("\n".join(out), encoding="utf-8")
+
+
 def render_star_growth(repos, path, history_path):
     today = dt.date.today().isoformat()
     total_stars = sum(int(r.get("stargazers_count", 0)) for r in repos if not r.get("fork"))
@@ -178,8 +267,8 @@ def render_star_growth(repos, path, history_path):
 
     out = [svg_header(width, height, "Open Source Star Growth")]
     out.append(f'<text class="sub" x="24" y="52">Total stars across public, non-fork repositories: {total_stars}</text>')
-    for step in range(4):
-        val = lo + (hi-lo) * step / 3
+    for step_i in range(4):
+        val = lo + (hi-lo) * step_i / 3
         yy = y(val)
         out.append(f'<line class="grid" x1="{left}" y1="{yy:.1f}" x2="{width-right}" y2="{yy:.1f}"/>')
         out.append(f'<text class="axis" x="16" y="{yy+4:.1f}">{int(round(val))}</text>')
@@ -206,8 +295,10 @@ def render_star_growth(repos, path, history_path):
 
 def main():
     activity = contribution_days(60)
+    year_activity = contribution_days(365)
     repos = owned_repositories()
     render_activity(activity, ASSETS / "activity-trend.svg")
+    render_contribution_calendar(year_activity, ASSETS / "contribution-calendar.svg")
     render_star_growth(repos, ASSETS / "star-growth.svg", DATA / "star-history.json")
     print("Generated profile metrics")
 
