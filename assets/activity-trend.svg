@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="270" viewBox="0 0 920 270" role="img" aria-label="60-Day Contribution Trend">
+<style>
+  .bg { fill:#0d1117; }
+  .grid { stroke:#21262d; stroke-width:1; }
+  .axis { fill:#8b949e; font:12px -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; }
+  .title { fill:#f0f6fc; font:600 18px -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; }
+  .sub { fill:#8b949e; font:13px -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; }
+  .value { fill:#58a6ff; font:600 14px -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; }
+  .line { fill:none; stroke:#58a6ff; stroke-width:3; stroke-linejoin:round; stroke-linecap:round; }
+  .area { fill:#58a6ff; opacity:.12; }
+  .dot { fill:#79c0ff; }
+  .bar { fill:#238636; }
+</style>
+<rect class="bg" x="0" y="0" width="920" height="270" rx="10"/>
+<text class="title" x="24" y="32">60-Day Contribution Trend</text>
+<text class="sub" x="24" y="52">3 contributions · 3 active days · public profile activity</text>
+<line class="grid" x1="48" y1="228.0" x2="896" y2="228.0"/>
+<text class="axis" x="12" y="232.0">0</text>
+<line class="grid" x1="48" y1="185.5" x2="896" y2="185.5"/>
+<text class="axis" x="12" y="189.5">1</text>
+<line class="grid" x1="48" y1="143.0" x2="896" y2="143.0"/>
+<text class="axis" x="12" y="147.0">2</text>
+<line class="grid" x1="48" y1="100.5" x2="896" y2="100.5"/>
+<text class="axis" x="12" y="104.5">3</text>
+<line class="grid" x1="48" y1="58.0" x2="896" y2="58.0"/>
+<text class="axis" x="12" y="62.0">4</text>
+<polygon class="area" points="48.0,228.0 48.0,228.0 62.4,228.0 76.7,228.0 91.1,228.0 105.5,228.0 119.9,228.0 134.2,228.0 148.6,228.0 163.0,228.0 177.4,228.0 191.7,228.0 206.1,228.0 220.5,228.0 234.8,228.0 249.2,228.0 263.6,228.0 278.0,228.0 292.3,228.0 306.7,228.0 321.1,228.0 335.5,228.0 349.8,228.0 364.2,228.0 378.6,228.0 392.9,228.0 407.3,228.0 421.7,228.0 436.1,228.0 450.4,228.0 464.8,228.0 479.2,228.0 493.6,228.0 507.9,228.0 522.3,228.0 536.7,228.0 551.1,228.0 565.4,228.0 579.8,228.0 594.2,228.0 608.5,228.0 622.9,228.0 637.3,228.0 651.7,228.0 666.0,228.0 680.4,228.0 694.8,228.0 709.2,228.0 723.5,228.0 737.9,228.0 752.3,228.0 766.6,228.0 781.0,228.0 795.4,228.0 809.8,185.5 824.1,185.5 838.5,228.0 852.9,228.0 867.3,228.0 881.6,228.0 896.0,185.5 896.0,228.0"/>
+<polyline class="line" points="48.0,228.0 62.4,228.0 76.7,228.0 91.1,228.0 105.5,228.0 119.9,228.0 134.2,228.0 148.6,228.0 163.0,228.0 177.4,228.0 191.7,228.0 206.1,228.0 220.5,228.0 234.8,228.0 249.2,228.0 263.6,228.0 278.0,228.0 292.3,228.0 306.7,228.0 321.1,228.0 335.5,228.0 349.8,228.0 364.2,228.0 378.6,228.0 392.9,228.0 407.3,228.0 421.7,228.0 436.1,228.0 450.4,228.0 464.8,228.0 479.2,228.0 493.6,228.0 507.9,228.0 522.3,228.0 536.7,228.0 551.1,228.0 565.4,228.0 579.8,228.0 594.2,228.0 608.5,228.0 622.9,228.0 637.3,228.0 651.7,228.0 666.0,228.0 680.4,228.0 694.8,228.0 709.2,228.0 723.5,228.0 737.9,228.0 752.3,228.0 766.6,228.0 781.0,228.0 795.4,228.0 809.8,185.5 824.1,185.5 838.5,228.0 852.9,228.0 867.3,228.0 881.6,228.0 896.0,185.5"/>
+<circle class="dot" cx="809.8" cy="185.5" r="4"/>
+<circle class="dot" cx="824.1" cy="185.5" r="4"/>
+<circle class="dot" cx="896.0" cy="185.5" r="4"/>
+<text class="axis" x="30.0" y="254">Jul 20</text>
+<text class="axis" x="461.2" y="254">Aug 19</text>
+<text class="axis" x="878.0" y="254">Sep 17</text>
+</svg>
