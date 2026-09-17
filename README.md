@@ -37,6 +37,23 @@ I enjoy working close to the hardware — from MCU drivers and real-time systems
 
 ---
 
+## 📊 GitHub Overview
+
+<div align="center">
+
+<img height="165" src="https://github-stats-extended.vercel.app/api?username=LeyueChen&show_icons=true&hide_border=true&theme=github_dark&include_all_commits=true" />
+
+<img height="165" src="https://github-stats-extended.vercel.app/api/top-langs/?username=LeyueChen&layout=compact&hide_border=true&theme=github_dark&langs_count=8" />
+
+</div>
+
+
+
+
+
+
+---
+
 ## 🛠️ Tech Stack
 
 ### Languages
@@ -94,19 +111,6 @@ A reusable STM32F407 project foundation for embedded development and rapid firmw
 [→ View Project](https://github.com/LeyueChen/STM32F407_ProjectTemplate)
 
 
-
-
----
-
-## 📊 GitHub Overview
-
-<div align="center">
-
-<img height="165" src="https://github-stats-extended.vercel.app/api?username=LeyueChen&show_icons=true&hide_border=true&theme=github_dark&include_all_commits=true" />
-
-<img height="165" src="https://github-stats-extended.vercel.app/api/top-langs/?username=LeyueChen&layout=compact&hide_border=true&theme=github_dark&langs_count=8" />
-
-</div>
 
 
 
