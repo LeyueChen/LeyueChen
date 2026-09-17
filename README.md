@@ -51,10 +51,10 @@ I enjoy working close to the hardware — from MCU drivers and real-time systems
 
 > The language card reflects the composition of public repositories, not programming-language proficiency.
 
-### 🏙️ Contribution Skyline
+### 🗓️ Contribution Calendar
 
 <div align="center">
-  <img src="./profile-3d-contrib/profile-night-view.svg" width="100%" alt="3D contribution calendar" />
+  <img src="./assets/contribution-calendar.svg" width="100%" alt="2D contribution calendar" />
 </div>
 
 <details>
