@@ -9,7 +9,6 @@
   .line { fill:none; stroke:#58a6ff; stroke-width:3; stroke-linejoin:round; stroke-linecap:round; }
   .area { fill:#58a6ff; opacity:.12; }
   .dot { fill:#79c0ff; }
-  .bar { fill:#238636; }
 </style>
 <rect class="bg" x="0" y="0" width="920" height="270" rx="10"/>
 <text class="title" x="24" y="32">60-Day Contribution Trend</text>
