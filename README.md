@@ -1,16 +1,26 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**LeyueChen/LeyueChen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Hi, I'm Leyue 👋
 
-Here are some ideas to get you started:
+### Embedded Systems · TinyML · Robotics · Audio DSP
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**Building intelligent systems close to the hardware.**
+
+</div>
+
+---
+
+## 👨‍💻 About Me
+
+I'm an embedded systems developer interested in building intelligent systems that connect software, hardware, and machine learning.
+
+Currently focusing on:
+
+* 🔧 Embedded Systems & RTOS
+* 🤖 TinyML & Edge AI
+* 🦾 Robotics & Distributed Systems
+* 🎸 Real-time Audio DSP
+* 🖥️ Embedded GUI & LVGL
+* 🐧 Embedded Linux
+
+I enjoy working close to the hardware — from MCU drivers and real-time systems to TinyML inference and distributed intelligent devices.
