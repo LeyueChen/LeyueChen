@@ -112,6 +112,27 @@ A reusable STM32F407 project foundation for embedded development and rapid firmw
 
 
 
+---
+
+## 🤝 Connect
+
+I'm always interested in embedded systems, TinyML, robotics, audio DSP, and open-source projects.
+
+If you're working on something interesting in these areas, feel free to reach out or start a discussion.
+
+<p>
+  <a href="https://github.com/LeyueChen">
+    <img src="https://img.shields.io/badge/GitHub-LeyueChen-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
+
+---
+
+<div align="center">
+
+**Build close to the hardware. Think beyond the hardware.**
+
+</div>
 
 
 
