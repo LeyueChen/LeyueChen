@@ -40,16 +40,33 @@ I enjoy working close to the hardware — from MCU drivers and real-time systems
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=LeyueChen&theme=github-compact&hide_border=true&area=true&custom_title=Contribution%20Activity&days=40" width="100%" />
+<img src="./assets/activity-trend.svg" width="100%" alt="60-day contribution trend" />
 
 <br/>
 
-<img height="165" src="https://github-stats-extended.vercel.app/api?username=LeyueChen&show_icons=true&hide_border=true&theme=github_dark&include_all_commits=true" />
-<img height="165" src="https://github-stats-extended.vercel.app/api/top-langs/?username=LeyueChen&layout=compact&hide_border=true&theme=github_dark&langs_count=8" />
+<img height="165" src="https://github-stats-extended.vercel.app/api?username=LeyueChen&show_icons=true&hide_border=true&theme=github_dark&include_all_commits=true" alt="GitHub stats" />
+<img height="165" src="https://github-stats-extended.vercel.app/api/top-langs/?username=LeyueChen&layout=compact&hide_border=true&theme=github_dark&langs_count=8" alt="Top languages" />
 
 </div>
 
 > The language card reflects the composition of public repositories, not programming-language proficiency.
+
+### 🏙️ Contribution Skyline
+
+<div align="center">
+  <img src="./profile-3d-contrib/profile-night-view.svg" width="100%" alt="3D contribution calendar" />
+</div>
+
+<details>
+<summary><b>⭐ Open Source Star Growth</b></summary>
+<br/>
+<div align="center">
+  <img src="./assets/star-growth.svg" width="100%" alt="Open-source star growth" />
+</div>
+
+> Star history is collected by this profile repository once per day, so the trend becomes more informative over time.
+
+</details>
 
 ---
 
