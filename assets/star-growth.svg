@@ -21,9 +21,9 @@
 <text class="axis" x="16" y="116.0">17</text>
 <line class="grid" x1="58" y1="64.0" x2="896" y2="64.0"/>
 <text class="axis" x="16" y="68.0">17</text>
-<polygon class="area" points="58.0,208.0 58.0,208.0 477.0,208.0 896.0,208.0 896.0,208.0"/>
-<polyline class="line" points="58.0,208.0 477.0,208.0 896.0,208.0"/>
+<polygon class="area" points="58.0,208.0 58.0,208.0 337.3,208.0 616.7,208.0 896.0,208.0 896.0,208.0"/>
+<polyline class="line" points="58.0,208.0 337.3,208.0 616.7,208.0 896.0,208.0"/>
 <circle class="dot" cx="896.0" cy="208.0" r="4"/>
 <text class="axis" x="48" y="234">09-17</text>
-<text class="axis" x="862" y="234">09-19</text>
+<text class="axis" x="862" y="234">09-20</text>
 </svg>
